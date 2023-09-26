@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font: bold 14px Aria, "San Francisco font";
+}
+
+html {
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 600px;
+
+  margin: 5% auto;
+  padding: 6px;
+
+  background: #000000;
+  border-radius: 30px;
+
+  box-shadow: 0 0 0 6px #000000, 0 0 0 8px #2f2939, 0 0 0 9px #7b747a,
+    0 0 0 12px #726371, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.top {
+  display: flex;
+  padding-top: 1%;
+}
+.time {
+  color: white;
+  font-size: 12px;
+  margin-left: 7%;
+  padding-right: 8%;
+  padding-top: 1.5%;
+}
+.calculator .navigation-gesture {
+  margin-top: 30px;
+  height: 3.5px;
+  width: 97px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calculator .top .indicators {
+  margin-left: 13px;
+  margin-right: 11px;
+}
+.calculator .top .indicators svg {
+  height: 20px;
+  width: 20px;
+  color: white;
+  padding: 2px;
+}
+
+.notch-container {
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 1px;
+  background-color: #000;
+  height: 24px;
+  width: 79px;
+  margin-left: 28px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 0 10px #ff9f0c;
+  background-image: linear-gradient(135deg, #fab2ff 10%, #1904e5 100%);
+}
+
+.notch-container .notch {
+  background: rgb(0, 0, 0);
+  color: white;
+  height: 21px;
+  width: 76px;
+  border-radius: 10px;
+}
+
+.calculator .screen-container {
+  overflow: hidden;
+  margin-top: 120px;
+}
+.calculator .screen-container .screen {
+  height: 80px;
+  width: 257px;
+  font-size: 60px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+/* Clear Floats to make sure #calculator includes them correctly */
+.keys,
+.top {
+  overflow: hidden;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+/* Applying css on all the keys */
+.calculator .keys span {
+  color: white;
+  position: relative;
+  /* Specifies the type of cursor to be displayed when pointing on an element. */
+  cursor: pointer;
+  width: 56.1px;
+  height: 56.1px;
+  border-radius: 50px;
+
+  background: #343434;
+
+  margin: 4px;
+  font-size: 22px;
+  /* color: #888; */
+  line-height: 55px;
+  text-align: center;
+
+  /* prevent selection of text inside keys */
+  user-select: none;
+  /* Transitions allows you to change property values smoothly  */
+  transition: all 0.2s ease;
+}
+
+#zero {
+  width: 120px;
+  text-align: left;
+  padding-left: 23px;
+}
+.keys span.top-btn {
+  background-color: #a5a5a5;
+}
+.keys span.right-btn {
+  background: #ff9f0c;
+}
+
+.calculator .keys span:hover {
+  filter: brightness(1.5);
+}
+
+.calculator .keys .top-btn:hover {
+  filter: brightness(0.8);
+}
+
+.calculator .keys .right-btn:hover {
+  filter: brightness(0.8);
+}
+

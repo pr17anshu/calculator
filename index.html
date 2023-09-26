@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="load()">
+        <div class="calculator">
+            <!-- Screen and clear key -->
+            <div class="top">
+                <div class="time">12:36</div>
+                <div class="notch-container">
+                    <div class="notch"></div>
+                </div>
+                <div class="indicators">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M18.5 20q-.625 0-1.062-.438Q17 19.125 17 18.5v-13q0-.625.438-1.062Q17.875 4 18.5 4t1.062.438Q20 4.875 20 5.5v13q0 .625-.438 1.062Q19.125 20 18.5 20Zm-12 0q-.3 0-.575-.113q-.275-.112-.487-.325q-.213-.212-.325-.487Q5 18.8 5 18.5v-3q0-.625.438-1.062Q5.875 14 6.5 14t1.062.438Q8 14.875 8 15.5v3q0 .3-.112.575q-.113.275-.326.487q-.212.213-.487.325Q6.8 20 6.5 20Zm6 0q-.625 0-1.062-.438Q11 19.125 11 18.5v-8q0-.625.438-1.062Q11.875 9 12.5 9t1.062.438Q14 9.875 14 10.5v8q0 .625-.438 1.062Q13.125 20 12.5 20Z" />
+                    </svg>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5.3 14.275q-.45-.45-.425-1.075q.025-.625.5-.975q1.375-1.05 3.063-1.638Q10.125 10 12 10q1.9 0 3.588.6q1.687.6 3.062 1.675q.475.35.488.963q.012.612-.438 1.062q-.425.425-1.037.438q-.613.012-1.138-.338q-.975-.675-2.112-1.037Q13.275 13 12 13t-2.412.375Q8.45 13.75 7.5 14.4q-.55.375-1.162.338q-.613-.038-1.038-.463ZM12 20q-.85 0-1.425-.575Q10 18.85 10 18q0-.85.575-1.425Q11.15 16 12 16q.85 0 1.425.575Q14 17.15 14 18q0 .85-.575 1.425Q12.85 20 12 20Z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <g transform="rotate(180 12 12)">
+                            <path fill="currentColor"
+                                d="M22 16q0 .425-.288.712Q21.425 17 21 17H5q-.425 0-.713-.288Q4 16.425 4 16v-2H3q-.425 0-.712-.288Q2 13.425 2 13v-2q0-.425.288-.713Q2.575 10 3 10h1V8q0-.425.287-.713Q4.575 7 5 7h16q.425 0 .712.287Q22 7.575 22 8Zm-12-1V9H6v6Z" />
+                        </g>
+                    </svg>
+
+                </div>
+            </div>
+            <div class="screen-container">
+                <div class="screen"></div>
+            </div>
+
+
+            <div class="keys">
+                <!-- operators and other keys -->
+                <span class="top-btn">AC</span>
+                <span class="top-btn">+/-</span>
+                <span class="top-btn">%</span>
+                <span class="right-btn">÷</span>
+
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span class="right-btn">×</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span class="right-btn">-</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span class="right-btn">+</span>
+                <span id="zero">0</span>
+                <span>.</span>
+                <span class="right-btn">=</span>
+
+            </div>
+
+            <div class="navigation-gesture"></div>
+        </div>
+    
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
